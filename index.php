@@ -104,9 +104,6 @@ if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
             text-align: center;
             font-size: 14px;
         }
-        .hint {
-            background-color: #efe;
-        }
         .warning {
             background-color: #fec;
         }
@@ -318,7 +315,7 @@ if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
                     <span class="message-text warning">⚠️ Enable JavaScript to use interactive features and automatically fetch both IPv4 and IPv6 addresses</span>
                 </div>
 
-            <style type="text/css">
+                <style type="text/css">
                     #js-only {
                         display: none;
                     }
@@ -340,10 +337,6 @@ if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
                     <div class="addr"><samp id="ipv6" class="loading" onclick="">Fetching...</samp></div>
                     <div class="icon"><button id="ipv6btn" class="btn-copy tooltip loading" data-tooltip="Copy to clipboard" onclick="copyToClipboard('ipv6', this)" disabled>⏳</button></div>
                 </div>
-
-                <!-- <div class="message-wrapper">
-                    <span class="message-text hint">💡 Click on a value to toggle between IP and hostname</span>
-                </div> -->
             </section>
 
             <footer>
